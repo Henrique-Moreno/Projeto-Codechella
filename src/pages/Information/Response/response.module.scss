@@ -1,0 +1,37 @@
+.response {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 1rem;
+
+   width: 996px;
+   height: 112px;
+
+   background: #C8DEEF;
+}
+
+
+.response p {
+   font-weight: 500;
+   font-size: 1.2em;
+   line-height: 2rem;
+   color: var(--cinza);
+}
+
+.response a {
+   text-decoration: underline;
+}
+
+@media (max-width: 912px) {
+   .response {
+      width: 649px;
+      height: 120px;
+   }
+}
+
+@media (max-width: 500px) {
+   .response {
+      width: 312px;
+      height: 240px;
+   }
+}

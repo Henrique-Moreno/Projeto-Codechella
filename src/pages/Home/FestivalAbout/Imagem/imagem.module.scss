@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+   .imgDesktop {
+      display: none;
+   }
+}
+
+@media (min-width: 640px) {
+   .imgMobile {
+      display: none;
+   }
+}

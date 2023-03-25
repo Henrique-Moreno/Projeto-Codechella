@@ -1,0 +1,40 @@
+.container {
+   background: #FACF9D;
+}
+.imgDesktop {
+   width: 100vw;
+}
+
+.imgTablet {
+   width: 100vw;
+}
+
+.imgMobile {
+   width: 100vw;
+}
+
+@media (max-width: 900px) {
+   .imgDesktop {
+      display: none;
+   }
+}
+
+@media (min-width: 900px) {
+   .imgTablet {
+      display: none;
+   }
+}
+
+@media (max-width: 500px) {
+   .imgTablet {
+      display: none;
+   }
+}
+
+@media (min-width: 500px) {
+   .imgMobile {
+      display: none;
+   }
+}
+
+

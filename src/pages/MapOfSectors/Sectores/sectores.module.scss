@@ -1,0 +1,52 @@
+.container {
+   display: flex;
+   align-items: center;
+   padding-left: 5rem;
+   gap: 3rem;
+   margin: 3rem 0;
+}
+
+.containerLegenda h2 {
+   font-weight: 700;
+   font-size: 1.8em;
+   line-height: 38px;
+   color: var(--cinza);
+   padding-bottom: 1rem;
+}
+
+.legenda {
+   display: flex;
+   align-items: center;
+   gap: .9rem;
+   padding: .7rem 0;
+   color: var(--cinza);
+   font-weight: 500;
+   font-size: 1.2em;
+   line-height: 40px;
+}
+
+@media (max-width: 912px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 5rem;
+   }
+
+   .legenda {
+      font-size: 1em;
+   }
+}
+
+@media (max-width: 640px) {
+   .imgDesktop {
+      display: none;
+   }
+
+}
+
+@media (min-width: 640px) {
+   .imgMobile {
+      display: none;
+   }
+
+}

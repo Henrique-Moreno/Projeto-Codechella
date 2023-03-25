@@ -1,0 +1,84 @@
+.Contaneir {
+   margin: 7rem auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Contaneir h6 {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 39px;
+   padding-bottom: 1rem;
+   line-height: 38px;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: var(--cinza);
+}
+
+.containerTickts {
+   background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+   width: 792px;
+   height: 350px;
+   margin-top: 2rem;
+}
+
+.Tickts {
+   display: flex;
+   align-items: self-start;
+
+   img {
+      margin: 0 2rem;
+
+   }
+
+   p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 40px;
+      color: var(--cinza);
+   }
+}
+
+@media (max-width: 912px) {
+   .Contaneir h6 {
+      font-size: 32px;
+      line-height: 38px;
+   }
+   .containerTickts {
+      width: 648px;
+      height: 684px;
+   }
+   
+   .Tickts {
+      display: flex;
+      padding-top: 4rem;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+   }
+}
+
+@media (max-width: 460px) {
+   .Contaneir {
+      display: flex;
+      justify-content: center;
+
+      h6 {
+         font-size: 32px;
+         line-height: 38px;
+      }
+   }
+   .containerTickts{
+      width: 312px;
+      height: 664px;
+   }
+
+   .Tickts {
+      text-align: center;
+   }
+}
