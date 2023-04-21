@@ -2,9 +2,8 @@ import ImgIcone from '../../../assets/img/local_activity.png';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import styles from './styles.module.scss';
 import Button from '../../../components/Ui/Button';
-import Link from '../../../components/Ui/Link';
+import { NavLink } from 'react-router-dom';
 import Imagem from './Imagem';
-
 
 export default function FestivalInformation() {
    return (
@@ -22,13 +21,13 @@ export default function FestivalInformation() {
                   Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!
                </p>
                <Button className={styles.button}>
-                  <Link 
-                     href='/ingresso'
+                  <NavLink 
+                     to='/ingresso'
                      className={styles.link}
                   >
                      Comprar ingresso!
                      <img src={ImgIcone} alt="imagem de um ingresso" />
-                  </Link>
+                  </NavLink>
                </Button>
             </aside>
          </article>

@@ -10,7 +10,7 @@ export default function Experience() {
   return (
    <>
       <Header/>
-      <main className={styles.container}>
+      <main>
          <Banner/>
          <InclusionSection/>
          <SustainabilitySection/>
