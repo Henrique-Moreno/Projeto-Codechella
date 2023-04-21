@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './navBar.module.scss';
-import Link from '../../Ui/Link';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
 
@@ -17,24 +17,24 @@ export default function NavBar() {
 
             <ul className={styles.listHeader}>
                <li>
-                  <Link href="/experiencia">
+                  <NavLink to="/experiencia">
                      A experiencia
-                  </Link>
+                  </NavLink>
                </li>
                <li>
-                  <Link href="/mapa">
+                  <NavLink to="/mapa">
                      Mapa de Setores
-                  </Link>
+                  </NavLink>
                </li>
                <li>
-                  <Link href="/informacoes">
+                  <NavLink to="/informacoes">
                      Informações
-                  </Link>
+                  </NavLink>
                </li>
                <li>
-                  <Link href="/ingresso">
+                  <NavLink to="/ingresso">
                      Ingresso
-                  </Link>
+                  </NavLink>
                </li>
             </ul>
          </nav>

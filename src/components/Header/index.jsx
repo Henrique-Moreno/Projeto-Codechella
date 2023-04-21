@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import styles from './header.module.scss';
-import Link from '../Ui/Link';
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png';
 import Menu from '../../assets/img/menu.png';
 import NavBar from './NavBar';
@@ -17,9 +17,9 @@ export default function Header() {
          <header className={styles.header}>
             <nav className={styles.containerHeader}>
                <div className={styles.navBar}>
-                  <Link href="/">
+                  <NavLink to="/">
                      <img src={Logo} alt="Logo da empresa" />
-                  </Link>
+                  </NavLink>
                   <div
                      onClick={showDetails}
                   >
@@ -28,24 +28,24 @@ export default function Header() {
                </div>
                <ul className={styles.listHeader}>
                   <li>
-                     <Link href="/experiencia">
+                     <NavLink to="/experiencia">
                         A experiencia
-                     </Link>
+                     </NavLink>
                   </li>
                   <li>
-                     <Link href="/mapa">
+                     <NavLink to="/mapa">
                         Mapa de Setores
-                     </Link>
+                     </NavLink>
                   </li>
                   <li>
-                     <Link href="/informacoes">
+                     <NavLink to="/informacoes">
                         Informações
-                     </Link>
+                     </NavLink>
                   </li>
                   <li>
-                     <Link href="/ingresso">
+                     <NavLink to="/ingresso">
                         Ingresso
-                     </Link>
+                     </NavLink>
                   </li>
                </ul>
             </nav>
