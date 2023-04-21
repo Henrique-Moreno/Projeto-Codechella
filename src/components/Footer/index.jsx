@@ -21,7 +21,7 @@ export default function Footer() {
          </div>
 
          <div className={styles.texto}>
-            <p>Desenvolvido por Alura.</p>
+            <p>Desenvolvido por Henrique.</p>
             <p>Projeto fictício sem fins comerciais.</p>
          </div>
 
